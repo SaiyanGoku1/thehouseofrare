@@ -1,0 +1,64 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "all",
+        "products_to_show": 8,
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "image_grid_jywpwe": {
+      "type": "image-grid",
+      "name": "Image Grid",
+      "settings": {
+        "image_picker_1": "shopify://shop_images/4M6A3758.jpg",
+        "mobile_image_picker_1": "shopify://shop_images/4M6A3723.jpg",
+        "url_1": "",
+        "image_picker_2": "shopify://shop_images/4M6A9461.jpg",
+        "mobile_image_picker_2": "shopify://shop_images/4M6A9461.jpg",
+        "url_2": "shopify://pages/monochrome",
+        "image_picker_3": "shopify://shop_images/Artboard_5.webp",
+        "mobile_image_picker_3": "shopify://shop_images/Artboard_1_14.jpg",
+        "url_3": "shopify://pages/t-shirts",
+        "image_picker_4": "shopify://shop_images/Artboard_6.webp",
+        "mobile_image_picker_4": "shopify://shop_images/3_1200x_c3b60399-6edf-440b-a650-9a83b77c1e4b.jpg",
+        "url_4": "shopify://pages/shackets"
+      }
+    }
+  },
+  "order": [
+    "featured_collection",
+    "image_grid_jywpwe"
+  ]
+}

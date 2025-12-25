@@ -1,0 +1,333 @@
+<style>
+    /* Base Styles */
+.image-grid-landing-page .landing-image-grid-page-wrapper .desktop-grid-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: calc(-97.44px + 100vh);
+}
+
+.grid-text-wrapper,
+.large-banner-wrapper,
+.desktop-split-banner-container {
+  height: 100%;
+}
+
+.grid-text-wrapper {
+  width: 25%;
+}
+
+.grid-text-wrapper img,
+.large-banner-wrapper img,
+.desktop-split-banner-container .first-banner-wrapper img,
+.desktop-split-banner-container .second-banner-wrapper img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.large-banner-wrapper {
+  width: 45%;
+}
+
+.banner-link {
+  position: relative;
+}
+
+.desktop-split-banner-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.desktop-split-banner-container .first-banner-wrapper,
+.desktop-split-banner-container .second-banner-wrapper {
+  flex: 1 1 0%;
+  position: relative;
+}
+
+/* Image Helpers */
+.blur-up {
+  filter: blur(0.4rem);
+}
+.blur-up.lazyloaded {
+  filter: blur(0rem);
+}
+.img-fluid,
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-style: none;
+  vertical-align: top;
+}
+
+/* Mobile Styles */
+.mobile-grid-wrapper .mobile-split-banner-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2px;
+}
+
+.mobile-split-banner-container .first-banner-wrapper,
+.mobile-split-banner-container .second-banner-wrapper {
+  width: calc(50% - 2px);
+  position: relative;
+}
+
+.mobile-large-banner-wrapper .banner-link,
+.mobile-grid-text-wrapper {
+  display: block;
+  width: 100%;
+}
+
+/* Responsive Visibility */
+@media screen and (min-width: 768px) {
+  .xs-show {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .xs-hide {
+    display: none !important;
+  }
+
+  .mobile-split-banner-container {
+    gap: 0px !important;
+  }
+
+  .mobile-split-banner-container .first-banner-wrapper,
+  .mobile-split-banner-container .second-banner-wrapper {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+</style>
+
+
+<div class="landing-image-grid-page-wrapper" data-header="dark">
+  <div class="container">
+    <div class="desktop-grid-wrapper xs-hide">
+      <a href="{{ section.settings.url_1 }}" class="grid-text-wrapper">
+        <img
+          alt=""
+          src="{{ section.settings.image_picker_1 | img_url: '2048x' }}"
+          data-sizes="auto"
+          data-src="//thehouseofrare.com/cdn/shop/files/first_part_e1fbc6ed-dac9-4b94-a874-f16cd0934147.jpg?v=1743159584"
+          data-srcset="//thehouseofrare.com/cdn/shop/files/first_part_e1fbc6ed-dac9-4b94-a874-f16cd0934147_480x.jpg?v=1743159584 480w,
+                       //thehouseofrare.com/cdn/shop/files/first_part_e1fbc6ed-dac9-4b94-a874-f16cd0934147_765x.jpg?v=1743159584 765w,
+                       //thehouseofrare.com/cdn/shop/files/first_part_e1fbc6ed-dac9-4b94-a874-f16cd0934147_900x.jpg?v=1743159584 900w,
+                       //thehouseofrare.com/cdn/shop/files/first_part_e1fbc6ed-dac9-4b94-a874-f16cd0934147_1000x.jpg?v=1743159584 1000w,
+                       //thehouseofrare.com/cdn/shop/files/first_part_e1fbc6ed-dac9-4b94-a874-f16cd0934147_1200x.jpg?v=1743159584 1200w,
+                       //thehouseofrare.com/cdn/shop/files/first_part_e1fbc6ed-dac9-4b94-a874-f16cd0934147_1500x.jpg?v=1743159584 1500w,
+                       //thehouseofrare.com/cdn/shop/files/first_part_e1fbc6ed-dac9-4b94-a874-f16cd0934147_1900x.jpg?v=1743159584 1900w"
+          class="blur-up img-fluid lazyautosizes ls-is-cached lazyloaded"
+          width="381"
+          height="857"
+          loading="lazy"
+          sizes="198px"
+        />
+      </a>
+
+      <div class="large-banner-wrapper">
+        <a href="{{ section.settings.url_2 }}" class="banner-link">
+          <img
+            alt=""
+            src="{{ section.settings.image_picker_2 | img_url: '2048x' }}"
+            data-sizes="auto"
+            data-src="//thehouseofrare.com/cdn/shop/files/left_seconf.png?v=1743587390"
+            data-srcset="//thehouseofrare.com/cdn/shop/files/left_seconf_480x.png?v=1743587390 480w,
+                         //thehouseofrare.com/cdn/shop/files/left_seconf_765x.png?v=1743587390 765w,
+                         //thehouseofrare.com/cdn/shop/files/left_seconf_900x.png?v=1743587390 900w,
+                         //thehouseofrare.com/cdn/shop/files/left_seconf_1000x.png?v=1743587390 1000w,
+                         //thehouseofrare.com/cdn/shop/files/left_seconf_1200x.png?v=1743587390 1200w,
+                         //thehouseofrare.com/cdn/shop/files/left_seconf_1500x.png?v=1743587390 1500w,
+                         //thehouseofrare.com/cdn/shop/files/left_seconf_1900x.png?v=1743587390 1900w"
+            class="blur-up img-fluid lazyautosizes lazyloaded"
+            width="1428"
+            height="1286"
+            loading="lazy"
+            sizes="356px"
+          />
+        </a>
+      </div>
+
+      <div class="desktop-split-banner-container">
+        <a href="{{ section.settings.url_3 }}" class="first-banner-wrapper">
+          <img
+            alt=""
+            src="{{ section.settings.image_picker_3 | img_url: '2048x' }}"
+            data-sizes="auto"
+            data-src="//thehouseofrare.com/cdn/shop/files/bottom_9be7719f-5a2c-457f-a556-ab6e097f4fa0.jpg?v=1743159708"
+            data-srcset="//thehouseofrare.com/cdn/shop/files/bottom_9be7719f-5a2c-457f-a556-ab6e097f4fa0_480x.jpg?v=1743159708 480w,
+                         //thehouseofrare.com/cdn/shop/files/bottom_9be7719f-5a2c-457f-a556-ab6e097f4fa0_765x.jpg?v=1743159708 765w,
+                         //thehouseofrare.com/cdn/shop/files/bottom_9be7719f-5a2c-457f-a556-ab6e097f4fa0_900x.jpg?v=1743159708 900w,
+                         //thehouseofrare.com/cdn/shop/files/bottom_9be7719f-5a2c-457f-a556-ab6e097f4fa0_1000x.jpg?v=1743159708 1000w,
+                         //thehouseofrare.com/cdn/shop/files/bottom_9be7719f-5a2c-457f-a556-ab6e097f4fa0_1200x.jpg?v=1743159708 1200w,
+                         //thehouseofrare.com/cdn/shop/files/bottom_9be7719f-5a2c-457f-a556-ab6e097f4fa0_1500x.jpg?v=1743159708 1500w,
+                         //thehouseofrare.com/cdn/shop/files/bottom_9be7719f-5a2c-457f-a556-ab6e097f4fa0_1900x.jpg?v=1743159708 1900w"
+            class="blur-up img-fluid lazyautosizes lazyloaded"
+            width="571"
+            height="400"
+            loading="lazy"
+            sizes="237px"
+          />
+        </a>
+
+        <a href="{{ section.settings.url_4 }}" class="second-banner-wrapper">
+          <img
+            alt=""
+            src="{{ section.settings.image_picker_4 | img_url: '2048x' }}"
+            data-sizes="auto"
+            data-src="//thehouseofrare.com/cdn/shop/files/top_image_947a559b-9aeb-4c05-8fb4-f546c16f34e4.png?v=1743160990"
+            data-srcset="//thehouseofrare.com/cdn/shop/files/top_image_947a559b-9aeb-4c05-8fb4-f546c16f34e4_480x.png?v=1743160990 480w,
+                         //thehouseofrare.com/cdn/shop/files/top_image_947a559b-9aeb-4c05-8fb4-f546c16f34e4_765x.png?v=1743160990 765w,
+                         //thehouseofrare.com/cdn/shop/files/top_image_947a559b-9aeb-4c05-8fb4-f546c16f34e4_900x.png?v=1743160990 900w,
+                         //thehouseofrare.com/cdn/shop/files/top_image_947a559b-9aeb-4c05-8fb4-f546c16f34e4_1000x.png?v=1743160990 1000w,
+                         //thehouseofrare.com/cdn/shop/files/top_image_947a559b-9aeb-4c05-8fb4-f546c16f34e4_1200x.png?v=1743160990 1200w,
+                         //thehouseofrare.com/cdn/shop/files/top_image_947a559b-9aeb-4c05-8fb4-f546c16f34e4_1500x.png?v=1743160990 1500w,
+                         //thehouseofrare.com/cdn/shop/files/top_image_947a559b-9aeb-4c05-8fb4-f546c16f34e4_1900x.png?v=1743160990 1900w"
+            class="blur-up img-fluid lazyautosizes lazyloaded"
+            width="857"
+            height="600"
+            loading="lazy"
+            sizes="237px"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="mobile-grid-wrapper xs-show">
+      <div class="mobile-split-banner-container">
+        <a href="{{ section.settings.url_1 }}" class="first-banner-wrapper">
+          <img
+            alt=""
+            src="{{ section.settings.mobile_image_picker_1 | img_url: '2048x' }}"
+            class="blur-up img-fluid lazyautosizes ls-is-cached lazyloaded"
+            width="317"
+            height="404"
+            loading="lazy"
+            sizes="305px"
+          />
+        </a>
+        <a href="{{ section.settings.url_2 }}" class="second-banner-wrapper">
+          <img
+            alt=""
+            src="{{ section.settings.mobile_image_picker_2 | img_url: '2048x' }}"
+            class="blur-up img-fluid lazyautosizes ls-is-cached lazyloaded"
+            width="317"
+            height="404"
+            loading="lazy"
+            sizes="305px"
+          />
+        </a>
+      </div>
+
+      <div class="mobile-large-banner-wrapper">
+        <a href="{{ section.settings.url_3 }}" class="banner-link">
+          <img
+            alt=""
+            src="{{ section.settings.mobile_image_picker_3 | img_url: '2048x' }}"
+            class="blur-up img-fluid lazyautosizes ls-is-cached lazyloaded"
+            width="429"
+            height="297"
+            loading="lazy"
+            sizes="609px"
+          />
+        </a>
+      </div>
+
+      <a href="{{ section.settings.url_4 }}" class="mobile-grid-text-wrapper">
+        <img
+          alt=""
+          src="{{ section.settings.mobile_image_picker_4 | img_url: '2048x' }}"
+          class="blur-up img-fluid lazyautosizes ls-is-cached lazyloaded"
+          width="412"
+          height="82"
+          loading="lazy"
+          sizes="609px"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+    {
+        "name": "Image Grid",
+        "class": "image-grid-landing-page",
+        "settings": [
+            {
+            "type": "image_picker",
+            "label": "Desktop Image Picker 1",
+            "id": "image_picker_1"
+            },
+            {
+            "type": "image_picker",
+            "label": "Mobile Image Picker 1",
+            "id": "mobile_image_picker_1"
+            },
+            {
+            "type": "url",
+            "label": "Url 1",
+            "id": "url_1"
+            },
+            {
+            "type": "image_picker",
+            "label": "Desktop Image Picker 2",
+            "id": "image_picker_2"
+            },
+            {
+            "type": "image_picker",
+            "label": "Mobile Image Picker 2",
+            "id": "mobile_image_picker_2"
+            },
+            {
+            "type": "url",
+            "label": "Url 2",
+            "id": "url_2"
+            },
+            {
+            "type": "image_picker",
+            "label": "Desktop Image Picker 3",
+            "id": "image_picker_3"
+            },
+            {
+            "type": "image_picker",
+            "label": "Mobile Image Picker 3",
+            "id": "mobile_image_picker_3"
+            },
+            {
+            "type": "url",
+            "label": "Url 3",
+            "id": "url_3"
+            },
+            {
+            "type": "image_picker",
+            "label": "Desktop Image Picker 4",
+            "id": "image_picker_4"
+            },
+            {
+            "type": "image_picker",
+            "label": "Mobile Image Picker 4",
+            "id": "mobile_image_picker_4"
+            },
+            {
+            "type": "url",
+            "label": "Url 4",
+            "id": "url_4"
+            }
+        ],
+        "presets": [
+            {
+            "name": "Image Grid",
+            "category": "Custom"
+            }
+        ]
+    }
+{% endschema %}
