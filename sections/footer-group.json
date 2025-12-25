@@ -1,0 +1,71 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "brand_information_GyX4a9": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        },
+        "link_list_wfQUfL": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Myster of fashion",
+            "menu": "footer"
+          }
+        },
+        "link_list_BCbi4z": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Policies",
+            "menu": "customer-account-main-menu"
+          }
+        },
+        "text_JRWLzM": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "subtext": "<p><em>Our Themes<br/>Blogs<br/>Terms</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "brand_information_GyX4a9",
+        "link_list_wfQUfL",
+        "link_list_BCbi4z",
+        "text_JRWLzM"
+      ],
+      "settings": {
+        "color_scheme": "scheme-37fe2c84-aacb-4fbb-9653-4966dc47e438",
+        "brand_headline": "Let's Connect",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
